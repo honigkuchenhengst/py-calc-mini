@@ -4,7 +4,7 @@ FONT = ('Arial', FONT_SIZE1)
 
 window = tk.Tk()
 window.title("Mini Calculator")
-window.geometry("500x500")
+window.geometry("500x600")
 
 entry = tk.Entry()
 entry.grid(row=0, column=0, columnspan= 4, sticky="nsew")
@@ -43,8 +43,8 @@ buttonGleich.grid(row=4, column= 3, sticky="nsew")
 buttonKomma = tk.Button(text=".", font=FONT)
 buttonKomma.grid(row=4, column= 1, sticky="nsew")
 
-buttonClear = tk.Button(text="C", font=FONT)
-buttonClear.grid(row=5, column= 3, sticky="nsew")
+buttonClear = tk.Button(text="C L E A R", font=('Arial', 18))
+buttonClear.grid(row=5, column= 0, columnspan=4, sticky="nsew")
 
 window.grid_rowconfigure(0, weight=1)
 window.grid_rowconfigure(1, weight=1)
